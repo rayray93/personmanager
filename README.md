@@ -1,6 +1,6 @@
 # personmanager
 
-# personmanager Managing person (_id, name, age, isActive) records using Meteor (https://www.meteor.com).      
+Personmanager Managing person (_id, name, age, isActive) records using Meteor (https://www.meteor.com).      
 
 Rules:    
 
