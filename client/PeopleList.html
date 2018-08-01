@@ -1,0 +1,12 @@
+<template name="PeopleList">
+  <h1 class="page-title">List of people</h1>
+  <ul class="shopping-list">
+    {{#each personAdd}}
+
+        <li>{{name}}</li>
+
+    {{else}}
+        <li>Please, <a href="/persons-manager">add</a> persons.</li>
+    {{/each}}
+  </ul>
+</template>

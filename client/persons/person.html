@@ -1,0 +1,23 @@
+<template name="Person">
+  <article class="recipe {{#if isActive}}in-menu{{/if}}">
+    <h3>{{name}}</h3>
+    <p>Id: {{_id}}</p>
+    <p>Age: {{age}}</p>
+    <p>Active: {{#if isActive}} Yes {{else}} No{{/if}}</p>
+
+  {{#if editMode }}
+
+        {{> quickForm collection="Persons" id=updatePersonsId type="update" doc=this autosave=true}}
+
+      {{#if isActive}}
+        <button class="btn-deny toggle-status">Remove</button>
+      {{else}}
+        <button class="btn-primary toggle-status">Add</button>
+      {{/if}}
+  {{/if}}
+
+    <i class="fa fa-pencil"></i>
+    <i class="fa fa-trash"></i>
+
+  </article>
+</template>
